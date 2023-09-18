@@ -1,0 +1,10 @@
+<div class="row border">
+  <div *ngFor="let beer of beers" class="card ms-1 mb-1" style="width : 18rem;">
+    <img [src]="beer.imagesrc" class="card-img-top" [alt]="beer.name">
+      <div class="card-body">
+        <h5 class="card-title">{{beer.name}}</h5>
+        <p class="card-text">{{beer.description}}</p>
+
+      </div>
+  </div>
+</div>
